@@ -4,4 +4,5 @@ This basic piece of code will open up cmd windows, one by one, in random locatio
 #### Setup:
 Copy both files into an external drive (USB etc.) and run random.vbs file.
 
-### Warning!!! Upon running this program your current session will be rendered unusable. You will need to restart your PC.
+### Warning!!! Upon running this program your current session will be rendered unusable. 
+### You will need to restart your PC.
