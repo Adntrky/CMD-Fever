@@ -1,4 +1,4 @@
-#About:
+# About:
 This basic piece of code will open up cmd windows, one by one, in random locations on your screen. The background and font colors will constantly, and idependently, change while all cmd windows output random numbers. Thus creating a spectacular way to kill your PC.
 
 #### Setup:
