@@ -5,6 +5,8 @@ Set objShell = CreateObject("Wscript.Shell")
 Set objWMIService = GetObject("winmgmts:\\.\root\cimv2")
 Set objConfig = objWMIService.Get("Win32_ProcessStartup")
 
+Set objNewProcess = objWMIService.Get("Win32_Process")
+
 strPath = objShell.CurrentDirectory
 strDrive = objFSO.GetDriveName(strPath)
 path = strDrive & "\main.bat"
@@ -22,8 +24,6 @@ do
 	objConfig.SpawnInstance_
 	objConfig.X = x_var
 	objConfig.Y = y_var
-
-	Set objNewProcess = objWMIService.Get("Win32_Process")
 
 	intReturn = objNewProcess.Create(path, Null, objConfig, intProcessID)
 loop
